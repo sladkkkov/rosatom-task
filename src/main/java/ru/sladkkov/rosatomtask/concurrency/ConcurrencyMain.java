@@ -18,9 +18,9 @@ public class ConcurrencyMain {
         service.scheduleAtFixedRate(new Runnable() {
             @SneakyThrows
             @Override
-            public void run() {
+            public void run() { 
                 System.out.println("Асинхронный привет!");
-                Thread.sleep(5000);
+                Thread.sleep(5_000);
                 System.out.println("Асинхронный пока!");
 
             }
